@@ -41,3 +41,17 @@ client.on('message', async (message) => {
 });
 
 client.initialize();
+// Tambahkan ini di bawah client.initialize()
+import express from 'express';
+
+const app = express();
+const port = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+  res.send('🤖 Bot WA Gemini aktif!');
+});
+
+app.listen(port, () => {
+  console.log(`Server berjalan di http://localhost:${port}`);
+});
+
