@@ -1,5 +1,11 @@
 import qrcode from 'qrcode-terminal';
-import { Client, LocalAuth } from 'whatsapp-web.js';
+// ❌ Hapus ini
+// import { Client, LocalAuth } from 'whatsapp-web.js';
+
+// ✅ Ganti dengan ini
+import pkg from 'whatsapp-web.js';
+const { Client, LocalAuth } = pkg;
+
 import dotenv from 'dotenv';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
